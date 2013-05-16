@@ -26,6 +26,7 @@
 		8D5BD9EF1743ABBF00A307B1 /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BD9EE1743ABBF00A307B1 /* Deck.m */; };
 		8D5BD9F21743ACE400A307B1 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BD9F11743ACE400A307B1 /* Card.m */; };
 		8D5BD9F51743C20C00A307B1 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BD9F41743C20C00A307B1 /* PlayingCard.m */; };
+		8D5BD9F81744984400A307B1 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BD9F71744984400A307B1 /* PlayingCardDeck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 		8D5BD9F11743ACE400A307B1 /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
 		8D5BD9F31743C20C00A307B1 /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
 		8D5BD9F41743C20C00A307B1 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		8D5BD9F61744984400A307B1 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		8D5BD9F71744984400A307B1 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +140,8 @@
 				8D5BD9F01743ACE400A307B1 /* Card.h */,
 				8D5BD9F31743C20C00A307B1 /* PlayingCard.h */,
 				8D5BD9F41743C20C00A307B1 /* PlayingCard.m */,
+				8D5BD9F61744984400A307B1 /* PlayingCardDeck.h */,
+				8D5BD9F71744984400A307B1 /* PlayingCardDeck.m */,
 				8D5BD9F11743ACE400A307B1 /* Card.m */,
 			);
 			path = CardGame;
@@ -292,6 +297,7 @@
 				8D5BD9EF1743ABBF00A307B1 /* Deck.m in Sources */,
 				8D5BD9F21743ACE400A307B1 /* Card.m in Sources */,
 				8D5BD9F51743C20C00A307B1 /* PlayingCard.m in Sources */,
+				8D5BD9F81744984400A307B1 /* PlayingCardDeck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
