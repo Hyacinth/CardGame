@@ -27,6 +27,7 @@
 		8D5BD9F21743ACE400A307B1 /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BD9F11743ACE400A307B1 /* Card.m */; };
 		8D5BD9F51743C20C00A307B1 /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BD9F41743C20C00A307B1 /* PlayingCard.m */; };
 		8D5BD9F81744984400A307B1 /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BD9F71744984400A307B1 /* PlayingCardDeck.m */; };
+		8D5BD9FB1744D2F700A307B1 /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D5BD9FA1744D2F700A307B1 /* CardMatchingGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +71,8 @@
 		8D5BD9F41743C20C00A307B1 /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
 		8D5BD9F61744984400A307B1 /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
 		8D5BD9F71744984400A307B1 /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+		8D5BD9F91744D2F700A307B1 /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardMatchingGame.h; sourceTree = "<group>"; };
+		8D5BD9FA1744D2F700A307B1 /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardMatchingGame.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +135,8 @@
 				8D5BD9C11743AAF700A307B1 /* CardGameAppDelegate.h */,
 				8D5BD9C21743AAF700A307B1 /* CardGameAppDelegate.m */,
 				8D5BD9CA1743AAF700A307B1 /* MainStoryboard.storyboard */,
+				8D5BD9F91744D2F700A307B1 /* CardMatchingGame.h */,
+				8D5BD9FA1744D2F700A307B1 /* CardMatchingGame.m */,
 				8D5BD9CD1743AAF700A307B1 /* CardGameViewController.h */,
 				8D5BD9CE1743AAF700A307B1 /* CardGameViewController.m */,
 				8D5BD9B91743AAF700A307B1 /* Supporting Files */,
@@ -298,6 +303,7 @@
 				8D5BD9F21743ACE400A307B1 /* Card.m in Sources */,
 				8D5BD9F51743C20C00A307B1 /* PlayingCard.m in Sources */,
 				8D5BD9F81744984400A307B1 /* PlayingCardDeck.m in Sources */,
+				8D5BD9FB1744D2F700A307B1 /* CardMatchingGame.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
