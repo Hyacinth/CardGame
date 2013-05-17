@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="80b34250-5639-41ca-8313-1f7102ed84be" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/CardGame.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/xcode.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CardGame.xcodeproj/project.xcworkspace/xcuserdata/anooprh.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/CardGame.xcodeproj/project.xcworkspace/xcuserdata/anooprh.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CardGame.xcodeproj/xcuserdata/anooprh.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist" afterPath="$PROJECT_DIR$/CardGame.xcodeproj/xcuserdata/anooprh.xcuserdatad/xcdebugger/Breakpoints.xcbkptlist" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CardGame/CardGameViewController.m" afterPath="$PROJECT_DIR$/CardGame/CardGameViewController.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CardGame/CardMatchingGame.m" afterPath="$PROJECT_DIR$/CardGame/CardMatchingGame.m" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CardGame/en.lproj/MainStoryboard.storyboard" afterPath="$PROJECT_DIR$/CardGame/en.lproj/MainStoryboard.storyboard" />
-    </list>
+    <list default="true" id="80b34250-5639-41ca-8313-1f7102ed84be" name="Default" comment="" />
     <ignored path="CardGame.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,7 +32,7 @@
       <file leaf-file-name="CardMatchingGame.m" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/CardGame/CardMatchingGame.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="50" column="70" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0">
+            <state line="51" column="70" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -117,7 +104,7 @@
       <file leaf-file-name="CardGameViewController.m" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CardGame/CardGameViewController.m">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="64" column="17" selection-start="1929" selection-end="1929" vertical-scroll-proportion="0.9335548">
+            <state line="64" column="17" selection-start="1928" selection-end="1928" vertical-scroll-proportion="0.9335548">
               <folding />
             </state>
           </provider>
@@ -253,7 +240,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1680" height="1024" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -427,14 +414,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CardGame/CardMatchingGame.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="50" column="70" selection-start="1080" selection-end="1080" vertical-scroll-proportion="0.0">
+        <state line="51" column="70" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CardGame/CardGameViewController.m">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="17" selection-start="1929" selection-end="1929" vertical-scroll-proportion="0.9335548">
+        <state line="64" column="17" selection-start="1928" selection-end="1928" vertical-scroll-proportion="0.9335548">
           <folding />
         </state>
       </provider>

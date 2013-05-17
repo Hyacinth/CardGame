@@ -20,4 +20,4 @@ profile
 .elc
 auto-save-list
 tramp
-.idea
+.idea/*
