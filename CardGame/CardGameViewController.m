@@ -9,13 +9,18 @@
 #import "CardGameViewController.h"
 #import "Deck.h"
 #import "PlayingCardDeck.h"
+#import "CardMatchingGame.h"
 
 @interface CardGameViewController ()
 
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
 @property (nonatomic) NSInteger flipcount;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
-@property (strong, nonatomic) Deck *deck;
+@property (strong, nonatomic) CardMatchingGame *game;
+@property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+
+- (void)updateUI;
+- (float)getAlphaForButton:(id)element;
 @end
 
 @implementation CardGameViewController
@@ -32,11 +37,32 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (Deck *)deck {
-    if (!_deck) {
-        _deck = [[PlayingCardDeck alloc] init];
+- (CardMatchingGame *)game {
+    if (!_game) {
+        _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count]
+                                                  usingDeck:[[PlayingCardDeck alloc] init]];
     }
-    return _deck;
+    return _game;
+}
+
+- (void)updateUI {
+    for (UIButton *cardbutton in self.cardButtons) {
+        Card *card = [self.game cardAtIndex:[self.cardButtons indexOfObject:cardbutton]];
+        [cardbutton setTitle:card.contents forState:UIControlStateSelected];
+        [cardbutton setTitle:card.contents forState:UIControlStateSelected|UIControlStateDisabled];
+        cardbutton.selected = card.isFaceUp;
+        cardbutton.enabled = !card.isUnplayable;
+        cardbutton.alpha = [self getAlphaForButton:cardbutton];
+    }
+    self.scoreLabel.text = [NSString stringWithFormat:@"Score : %d",[[self game] score]];
+}
+
+- (float)getAlphaForButton:(UIButton *)element{
+    float alpha = 1;
+    if (!element.enabled) {
+        alpha = 0.3;
+    }
+    return alpha;
 }
 
 - (void)setFlipcount:(NSInteger)flipcount {
@@ -45,17 +71,16 @@
 }
 
 - (IBAction)flipCard:(UIButton *)sender {
-    sender.selected = !sender.selected;
+    [self.game flipCardAtIndex:[self.cardButtons indexOfObject:sender]];
     self.flipcount++;
-    
+    [self updateUI];
 }
 
 - (void)setCardButtons:(NSArray *)cardButtons {
     _cardButtons = cardButtons;
-    for (UIButton *cardbutton in self.cardButtons) {
-        Card *card = self.deck.drawRandomCard;
-        [cardbutton setTitle:card.contents forState:UIControlStateSelected];
-    }
+    [self updateUI];
 }
+
+
 
 @end

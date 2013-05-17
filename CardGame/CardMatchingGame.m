@@ -17,7 +17,7 @@
 @implementation CardMatchingGame
 
 - (NSMutableArray *)cards {
-    if (_cards) {
+    if (!_cards) {
         _cards = [[NSMutableArray alloc] init];
     }
     return _cards;
@@ -26,10 +26,11 @@
 - (id)initWithCardCount:(NSUInteger)count usingDeck:(Deck *)deck {
     self = [super init];
     if (self) {
+        self.score = 0;
         for (int i = 0 ; i < count ; i++) {
             Card *card = [deck drawRandomCard];
             if (card) {
-                self.cards[i] = card;
+               self.cards[i] = card;
             } else {
                 self = nil;
                 break;
@@ -41,13 +42,13 @@
 
 #define MATCH_BONUS 4
 #define MISMATCH_PENALTY 2
-#define FLIP_COST 4
+#define FLIP_COST 1
 
 - (void)flipCardAtIndex:(NSUInteger)index {
     Card *card = [self cardAtIndex:index];
     
     if (card && !card.isUnplayable) {
-        if(![card isFaceUp]){
+        if(!card.isFaceUp){
             for (Card *othercard in self.cards) {
                 if (othercard.isFaceUp && !othercard.isUnplayable) {
                     int matchScore = [card match:@[othercard]];
@@ -64,7 +65,9 @@
                 }
                 self.score -= FLIP_COST;
             }
+            
         }
+        card.faceUp = !card.isFaceUp;
     }
 }
 
